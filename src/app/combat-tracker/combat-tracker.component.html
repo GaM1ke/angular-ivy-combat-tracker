@@ -1,0 +1,9 @@
+<div>
+  Initiative Order
+  <app-combat-entity
+    *ngFor="let newEntity of combatEntities"
+    [entity]="newEntity"
+  >
+  </app-combat-entity>
+</div>
+<button type="button" (click)="createEntity()">Create Entity</button>
